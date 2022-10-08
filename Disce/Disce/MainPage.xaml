@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Name="MainCP" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Disce.MainPage">
+    <Grid  >
+        
+        <StackLayout x:Name="Container" VerticalOptions="Center" HorizontalOptions="Center" >
+             <AbsoluteLayout>
+                <Label x:Name="TitleShadow" TranslationX="2" TranslationY="2" FontSize="48" Text="Disce" />
+                <Label x:Name="Title" FontSize="48" Text="Disce" />
+            </AbsoluteLayout>
+            <Button x:Name="PlayButton" HorizontalOptions="Center" Text="Play!" Clicked="PlayButton_Clicked"/>
+            <Button x:Name="OptionsButton" HorizontalOptions="Center" Text="Options" Clicked="OptionsButton_Clicked" />
+        </StackLayout>
+
+        <AbsoluteLayout  x:Name="WaveContainter" InputTransparent="true"  VerticalOptions="CenterAndExpand">
+            <StackLayout Spacing="-20">
+                <Image x:Name="Waves"  WidthRequest="2048"  HeightRequest="150"  />
+                <Rectangle x:Name="WavesRectangle" Fill="#2E5199" />
+            </StackLayout>
+            
+        </AbsoluteLayout>
+
+    </Grid>
+    
+</ContentPage>

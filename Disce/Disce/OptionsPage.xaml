@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Disce.OptionsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Options" FontSize="Title" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" Padding="20"></Label>
+            <Label Text="Language:" FontSize="Medium" FontAttributes="Bold" TextColor="White" HorizontalOptions="Start" Padding="20, 0"></Label>
+            <Picker x:Name="Language" TextColor="White" Margin="20, 0"  HorizontalOptions="FillAndExpand">
+               
+                <Picker.Items>
+                    <x:String>English</x:String>
+                    <x:String>عربى</x:String>
+                </Picker.Items>
+                <Picker.SelectedIndex>0</Picker.SelectedIndex>
+            </Picker>
+            <Label Text="Pictures:" FontSize="Medium" FontAttributes="Bold" TextColor="White" HorizontalOptions="Start" Padding="20, 0"></Label>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

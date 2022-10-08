@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="#2e5199" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Disce.TransititonPage" NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <Grid>
+
+            <StackLayout>
+
+                <Frame CornerRadius="10" HasShadow="True" IsClippedToBounds="True" Margin="6" Padding="0">
+                    <Grid x:Name="LettersContainer" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView x:Name="Letters" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="LightGray"></BoxView>
+                    </Grid>
+                </Frame>
+                <StackLayout Orientation="Horizontal">
+                    <Frame CornerRadius="10" HasShadow="True" IsClippedToBounds="True" Margin="5" Padding="0">
+                        <Grid x:Name="NumbersAddSubContainer" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <BoxView x:Name="Numbers" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="LightGray"></BoxView>
+                        </Grid>
+                    </Frame>
+
+                    <Frame CornerRadius="10" HasShadow="True" IsClippedToBounds="True" Margin="5" Padding="0">
+                        <Grid x:Name="NumbersDivMultiContainer" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <BoxView x:Name="DivMultiNumbers" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="LightGray"></BoxView>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <Frame CornerRadius="10" HasShadow="True" IsClippedToBounds="True" Margin="5" Padding="0">
+                    <Grid x:Name="CountContainer" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <BoxView x:Name="Count" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="LightGray"></BoxView>
+                    </Grid>
+                </Frame>
+                <!-- <Label x:Name="ContinueLabel" Text="Continue" TextDecorations="Underline" VerticalOptions="Center" HorizontalOptions="Center" />-->
+            </StackLayout>
+
+            <AbsoluteLayout  x:Name="WaveContainter" InputTransparent="true"  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" TranslationX="-1500" TranslationY="-70">
+                <StackLayout Spacing="-20">
+                    <Image x:Name="WaveReverse"  WidthRequest="2048"  HeightRequest="150"  />
+                    <Rectangle x:Name="WavesRectangle" Fill="#2E5199" />
+                </StackLayout>
+            </AbsoluteLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
