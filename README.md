@@ -1,7 +1,6 @@
 <img src="https://i.postimg.cc/0QPk2vFy/Logo2.png" alt="logo" align="left"/> 
-
 ## Disce
-
+<br/><br/> 
 ## Description
 
 Disce is an open-source educational video game designed for children between two and nine years old. It aims to provide an entertaining, educational experience to children free of ads, data collection, and in-app purchases.    
